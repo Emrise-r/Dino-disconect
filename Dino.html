@@ -27,7 +27,7 @@
             this.canvas.height = 270;
             this.context = this.canvas.getContext("2d");
             this.frame = 0;
-            this.interval = setInterval(updateGameArea, 50);
+            this.interval = setInterval(updateGameArea, 100);
             document.body.insertBefore(this.canvas, document.body.childNodes[0]);
             window.addEventListener('keydown', function (e) {
                 gameArea.keys = (gameArea.keys || []);
